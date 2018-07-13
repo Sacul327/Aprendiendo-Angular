@@ -1,5 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 
-#navbar {
+.navbar {
     background-color: #ffffff;
+}
+
+.jumbotron {
+    background-image: url("assets/img/PharaohHoundExpensiveDogBreeds.jpg");
+    background-repeat: no-repeat;
+    height: 900PX;
+    opacity: 0.5;
+    margin-bottom: 0rem!important;
+}
+
+footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
+
+.wid {
+    width: 100%;
 }

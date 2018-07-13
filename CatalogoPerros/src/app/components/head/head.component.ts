@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { BodyComponent } from '../body/body.component';
+import { AppComponent } from '../../app.component';
 
 @Component({
   selector: 'app-head',
@@ -6,10 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./head.component.css']
 })
 export class HeadComponent  {
-
   
-  
-  constructor() { }
+ 
 
   
     
