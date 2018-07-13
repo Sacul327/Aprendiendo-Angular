@@ -7,6 +7,7 @@ import { BodyComponent } from './components/body/body.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { APP_ROUTING } from './lucas.routing';
 import { CatalogoComponent } from './components/catalogo/catalogo.component';
+import { VideosComponent } from './components/videos/videos.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CatalogoComponent } from './components/catalogo/catalogo.component';
     HeadComponent,
     BodyComponent,
     FooterComponent,
-    CatalogoComponent
+    CatalogoComponent,
+    VideosComponent
   ],
   imports: [
     BrowserModule,
