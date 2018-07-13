@@ -1,10 +1,10 @@
-<div class="building-block     ">
+<div class="building-block" *ngFor="let iterador of videos">
     <div class="building-block-aspect">
         <div class="building-block-padding">
             <div class="building-block-wrapper">
                 <div class="image-wrapper">
                     <div class="aspect">
-                        <a href="https://www.starwars.com/films/solo"> <img src="https://lumiere-a.akamaihd.net/v1/images/solo-theatrical-poster-1000_27861ab7.jpeg?region=0%2C279%2C1000%2C503&amp;width=600" class="thumb reserved-ratio" alt="Solo: A Star Wars Story"> </a>
+                        <a href="https://www.starwars.com/films/solo"> <img src={{iterador.imagenURL}} class="thumb reserved-ratio" alt="Solo: A Star Wars Story"> </a>
                     </div>
                 </div>
                 <div class="content-wrapper   ">
@@ -12,13 +12,11 @@
                     <div class="content-bumper">
                         <div class="content-info">
                             <h3 class="title">
-                                <a href="https://www.starwars.com/films/solo"> <span class="long-title">Solo: A Star Wars Story</span> </a>
+                                <a href="https://www.starwars.com/films/solo"> <span class="long-title">{{iterador.tituloVideo}}</span> </a>
                             </h3>
                             <div class="desc-sizer">
                                 <a href="https://www.starwars.com/films/solo">
-                                    <p class="desc">Board the Millennium Falcon and journey to a galaxy far, far away in Solo: A Star Wars Story, an all-new adventure with the most beloved scoundrel in the galaxy. Through a series of daring escapades deep within a dark
-                                        and dangerous criminal underworld, Han Solo meets his mighty future copilot Chewbacca and encounters the notorious gambler Lando Calrissian, in a journey that will set the course of one of the Star Wars saga’s most
-                                        unlikely heroes. Solo: A Star Wars Story releases in U.S. Theaters on May 25, 2018.</p>
+                                    <p class="desc">{{iterador.description}}</p>
                                 </a>
                             </div>
                         </div>

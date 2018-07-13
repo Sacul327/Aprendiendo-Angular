@@ -28,6 +28,20 @@ export class CatalogoComponent {
           tamanio:"Tamaño: grande",     
           description:"Tiene un físico ligero y estilizado, con patas largas y pecho voluminoso, que le permite alcanzar grandes velocidades.",
           imageUrl:"assets/img/pastor-aleman-negro-solido.jpg"
+         },
+         {
+          productId:4,
+          razaPerro:"chihuahua", 
+          tamanio:"Tamaño: muy chico",     
+          description:"Tiene un físico ligero y estilizado, con patas largas y pecho voluminoso, que le permite alcanzar grandes velocidades.",
+          imageUrl:"assets/img/pastor-aleman-negro-solido.jpg"
+         },
+         {
+          productId:5,
+          razaPerro:"bulldog", 
+          tamanio:"Tamaño: chico",     
+          description:"Tiene un físico ligero y estilizado, con patas largas y pecho voluminoso, que le permite alcanzar grandes velocidades.",
+          imageUrl:"assets/img/pastor-aleman-negro-solido.jpg"
          }
         ]
 
