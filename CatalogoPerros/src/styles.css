@@ -23,3 +23,10 @@ footer {
 .wid {
     width: 100%;
 }
+
+.card-img-top {
+    width: 100% !important;
+    height: 100% !important;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}

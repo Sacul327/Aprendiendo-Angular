@@ -20,28 +20,28 @@ export class CatalogoComponent {
             razaPerro:"Pastor aleman negro", 
             tamanio:"Tamaño: grande",     
             description:"De la mezcla de las distintas clases de perros sale los diferentes colores que hoy en día se conocen de la raza pastor alemán.",
-            imageUrl:"assets/img/pastor-aleman-negro-solido.jpg"
+            imageUrl:"assets/img/pastornegrosolido.jpg"
          },
          {
           productId:3,
           razaPerro:"Galgo Español", 
           tamanio:"Tamaño: grande",     
           description:"Tiene un físico ligero y estilizado, con patas largas y pecho voluminoso, que le permite alcanzar grandes velocidades.",
-          imageUrl:"assets/img/pastor-aleman-negro-solido.jpg"
+          imageUrl:"assets/img/galgoespaniol.jpg"
          },
          {
           productId:4,
           razaPerro:"chihuahua", 
           tamanio:"Tamaño: muy chico",     
           description:"Tiene un físico ligero y estilizado, con patas largas y pecho voluminoso, que le permite alcanzar grandes velocidades.",
-          imageUrl:"assets/img/pastor-aleman-negro-solido.jpg"
+          imageUrl:"assets/img/chihuahua.jpg"
          },
          {
           productId:5,
           razaPerro:"bulldog", 
           tamanio:"Tamaño: chico",     
           description:"Tiene un físico ligero y estilizado, con patas largas y pecho voluminoso, que le permite alcanzar grandes velocidades.",
-          imageUrl:"assets/img/pastor-aleman-negro-solido.jpg"
+          imageUrl:"assets/img/bulldog.jpg"
          }
         ]
 

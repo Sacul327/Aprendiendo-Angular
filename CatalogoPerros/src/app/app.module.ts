@@ -16,7 +16,8 @@ import { VideosComponent } from './components/videos/videos.component';
     BodyComponent,
     FooterComponent,
     CatalogoComponent,
-    VideosComponent
+    VideosComponent,
+    
   ],
   imports: [
     BrowserModule,
