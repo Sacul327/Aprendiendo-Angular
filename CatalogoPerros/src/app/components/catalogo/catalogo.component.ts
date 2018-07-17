@@ -1,50 +1,44 @@
 import { Component, OnInit } from '@angular/core';
+import { razas, RazasService } from '../../service/razas.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-catalogo',
   templateUrl: './catalogo.component.html',
   styleUrls: ['./catalogo.component.css']
 })
+
 export class CatalogoComponent {
 
-  constructor() { }
-   razas:any[]=[{
-            productId:1,
-            razaPerro:"Pastor suizo",
-            tamanio:"Tamaño: grande",          
-            description:"El carácter del pastor blanco suizo está marcado por la confianza en sí mismo. La raza es serena, pero cuando la situación lo exige sus instintos protectores lo pondrán alerta y listo para servir.",
-            imageUrl:"assets/img/pastor-blanco-suizo.jpg"
-         },
-        {
-            productId:2,
-            razaPerro:"Pastor aleman negro", 
-            tamanio:"Tamaño: grande",     
-            description:"De la mezcla de las distintas clases de perros sale los diferentes colores que hoy en día se conocen de la raza pastor alemán.",
-            imageUrl:"assets/img/pastornegrosolido.jpg"
-         },
-         {
-          productId:3,
-          razaPerro:"Galgo Español", 
-          tamanio:"Tamaño: grande",     
-          description:"Tiene un físico ligero y estilizado, con patas largas y pecho voluminoso, que le permite alcanzar grandes velocidades.",
-          imageUrl:"assets/img/galgoespaniol.jpg"
-         },
-         {
-          productId:4,
-          razaPerro:"chihuahua", 
-          tamanio:"Tamaño: muy chico",     
-          description:"Tiene un físico ligero y estilizado, con patas largas y pecho voluminoso, que le permite alcanzar grandes velocidades.",
-          imageUrl:"assets/img/chihuahua.jpg"
-         },
-         {
-          productId:5,
-          razaPerro:"bulldog", 
-          tamanio:"Tamaño: chico",     
-          description:"Tiene un físico ligero y estilizado, con patas largas y pecho voluminoso, que le permite alcanzar grandes velocidades.",
-          imageUrl:"assets/img/bulldog.jpg"
-         }
-        ]
+  raza: razas[] = [];
+  constructor( private _razasService: RazasService,
+               private ruta: Router) {
+    console.log('Constructor');
+    }
 
-  
+
+  ngOnInit() {
+    this.raza = this._razasService.getRazas();
+    console.log(this.raza);
+  }
+
+  // Para saber que heroe vamos a mostrar
+  verPerro( index: number ) {
+    console.log(index);
+    this.ruta.navigate( ['/perro', index]);
+  }
+  buscarPerros( termino:string):razas[]{
+    // Creo una variable de arreglo de heroe
+    let razaArr: razas[] = [];
+    termino = termino.toLowerCase();
+    for ( let raz of this.raza ){
+      let nombre = raz.razaPerro.toLowerCase();
+      if ( nombre.indexOf( termino ) >= 0 ){
+          console.log(razaArr.push(raz));
+      }
+    }
+    return razaArr;
+  }
 
 }
+

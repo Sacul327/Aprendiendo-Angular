@@ -8,6 +8,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { APP_ROUTING } from './lucas.routing';
 import { CatalogoComponent } from './components/catalogo/catalogo.component';
 import { VideosComponent } from './components/videos/videos.component';
+import { PerroComponent } from './components/perro/perro.component';
+import { BuscadorComponent } from './components/buscador/buscador.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { VideosComponent } from './components/videos/videos.component';
     FooterComponent,
     CatalogoComponent,
     VideosComponent,
+    PerroComponent,
+    BuscadorComponent,
     
   ],
   imports: [

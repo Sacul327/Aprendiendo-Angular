@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { BodyComponent } from '../body/body.component';
 import { AppComponent } from '../../app.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-head',
@@ -9,10 +10,16 @@ import { AppComponent } from '../../app.component';
 })
 export class HeadComponent  {
   
- 
+  constructor(private router:Router) { }
+
+  buscarPerro( termino: string ) {
+    console.log(termino);
+    this.router.navigate(['/buscar', termino]);
+  }
 
   
     
   
 
 }
+

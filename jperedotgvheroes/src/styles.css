@@ -1,6 +1,57 @@
-.card-img-top {
-    width: 100% !important;
-    height: 100% !important;
-    border-top-left-radius: calc(.25rem - 1px);
-    border-top-right-radius: calc(.25rem - 1px);
+/* You can add global styles to this file, and also import other style files */
+
+.main-container {
+    margin-top: 20px;
+}
+
+bdy {
+    padding-bottom: 50px;
+}
+
+
+/* Activo */
+
+.activo {
+    background-color: black;
+}
+
+.activo a {
+    color: white;
+}
+
+
+/* Imagenes */
+
+.img-logo {
+    width: 120px;
+}
+
+
+/* Animaciones */
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
 }

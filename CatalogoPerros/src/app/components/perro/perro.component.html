@@ -1,0 +1,35 @@
+<!-- Page Content -->
+
+<body>
+
+
+    <div class="container">
+
+        <!-- Portfolio Item Heading -->
+        <h1 class="my-4">{{perro.razaPerro}}
+            <small></small>
+        </h1>
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <div class="col-md-8">
+                <img class="img-fluid" src="{{perro.imageUrl}}" alt="">
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="my-3">Descripcion :</h3>
+                <p>{{perro.description}}
+                </p>
+                <h3 class="my-3">Detalles de la raza :</h3>
+                <ul>
+                    <li>{{perro.tamanio}}</li>
+                    <li>color :</li>
+                    <li>expectativa de vida :</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</body>
