@@ -78,6 +78,24 @@ export class RazasService {
   color:"negros con blanco, cafés, rojizos, y recientemente se halló un color de malamute blanco.",
   vida: "10 – 12 años."
  },
+ {
+  productId:9,
+  razaPerro:"Bull Terrier", 
+  tamanio:"Tamaño: Chico - Mediano",     
+  description:"El Bull terrier o bull terrier inglés es una raza canina de la familia de los terrier. Son conocidos por la forma única de su cabeza y sus pequeños ojos en forma triangular. Su temperamento ha sido descrito como amante de la diversión, así como activos y graciosos. Han aparecido como personajes en tiras cómicas, libros, películas y publicidad. También son muy cariñosos.",
+  imageUrl:"assets/img/bullterrier.jpg",
+  color:"negro atigrado, rojo, leonado y tricolor.",
+  vida: "10 – 14 años."
+ },
+ {
+  productId:10,
+  razaPerro:"Gran Danes", 
+  tamanio:"Tamaño: Muy grande",     
+  description:"El gran danés, dogo alemán o alano alemán es una raza canina conocida por su gran tamaño y personalidad delicada, considerado como el «Apolo entre todas las razas» por la Federación Cinológica Internacional. También se considera que desciende del Bullenbeisser con mezcla de sangre 50/50 y es parte del grupo Generación Bullenbeisser.",
+  imageUrl:"assets/img/granDanes.jpg",
+  color:"Azul, Negros, Arlequín, Atigrado y Leonado",
+  vida: "8 – 10 años."
+ },
  
 
 ];
