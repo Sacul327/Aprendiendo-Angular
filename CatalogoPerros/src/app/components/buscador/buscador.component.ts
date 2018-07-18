@@ -7,6 +7,7 @@ import { RazasService, razas } from '../../service/razas.service';
   templateUrl: './buscador.component.html',
   styleUrls: ['./buscador.component.css']
 })
+
 export class BuscadorComponent implements OnInit {
 
   
@@ -14,7 +15,8 @@ export class BuscadorComponent implements OnInit {
   termino: string;
 
   constructor(private activatedRoute: ActivatedRoute,
-              private _razasService: RazasService) {
+              private _razasService: RazasService,
+              private ruta: Router) {
 
    }
 
@@ -24,6 +26,11 @@ export class BuscadorComponent implements OnInit {
       this.raza = this._razasService.buscarPerros(params['termino']);
       console.log(this.raza);
       });
+  }
+
+  verPerro( index: number ) {
+    console.log(index);
+    this.ruta.navigate( ['/perro', index]);
   }
 
 }
