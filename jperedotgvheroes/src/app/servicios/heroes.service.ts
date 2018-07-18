@@ -70,15 +70,19 @@ export class HeroesService {
     // Creo una variable de arreglo de heroe
     let heroeArr: Heroe[] = [];
     termino = termino.toLowerCase();
-    for ( let heroe of this.heroes ){
+    for ( let i = 0; i < this.heroes.length; i ++ ){
+      let heroe = this.heroes[i];
       let nombre = heroe.nombre.toLowerCase();
+
       if ( nombre.indexOf( termino ) >= 0 ){
-          console.log(heroeArr.push(heroe));
+        heroe.idx = i;
+        console.log("El indice es: " + heroe.idx);
+        console.log(heroeArr.push(heroe));
       }
     }
     return heroeArr;
   }
-  
+
 constructor() {
   console.log(' Servicio listo para ser usado ');
  }
@@ -91,5 +95,6 @@ export interface Heroe {
   img: string;
   aparicion: string;
   casa: string;
+  idx?: number;
 }
 

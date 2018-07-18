@@ -18,7 +18,7 @@ export class BuscadorComponent implements OnInit {
               private _razasService: RazasService,
               private ruta: Router) {
 
-   }
+  }
 
   ngOnInit() {
     this.activatedRoute.params.subscribe( params =>{

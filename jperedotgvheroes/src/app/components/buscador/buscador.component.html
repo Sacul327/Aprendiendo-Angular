@@ -1,22 +1,15 @@
 <h1>Buscando al Héroe.. <small>{{ termino }}</small> </h1>
 <hr>
 
-<div class="card-columns">
-    <!-- Agregamos el index cuando vayamos a querer pasar este como parametro-->
-    <div class="card animated fadeIn fast" *ngFor="let heroe of heroes; let i = index">
-        <!--<img class="card-img-top" src="{{heroe.img}}" alt="Card image cap"> -->
-        <img class="card-img-top" [src]="heroe.img" [alt]="heroe.nombre">
-        <div class="card-body">
-            <h5 class="card-title">{{heroe.nombre }}</h5>
-            <p class="card-text"> {{ heroe.bio }} </p>
-            <p class="card-text"><small class="text-muted">{{heroe.aparicion}}</small></p>
-            <!-- Si quiero usar el boton debo hacer algunos cambios y crear una funcion en el componente -->
-            <button (click)="verHeroe(i)" type="button" class="btn btn-outline-primary btn-block">
-              Ver más...
-            </button>
-
-            <!-- Agregamos / para que vaya a la raiz y encuentre el componente -->
-            <a [routerLink]="['/heroe',i]" class="btn btn-outline-primary">Ver más link</a>
+<div class="row animated fadeIn fast" *ngIf="heroes.length == 0">
+    <div class="col-md-12">
+        <div class="alert alert-info" role="alert">
+            No existen resultados con el termino: {{ termino | uppercase }}
         </div>
     </div>
+</div>
+
+<div class="card-columns">
+    <app-heroe-tarjeta [heroe]="dato" [index]="dato.idx" *ngFor="let dato of heroes; let i = index">
+    </app-heroe-tarjeta>
 </div>

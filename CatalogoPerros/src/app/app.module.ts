@@ -10,6 +10,7 @@ import { CatalogoComponent } from './components/catalogo/catalogo.component';
 import { VideosComponent } from './components/videos/videos.component';
 import { PerroComponent } from './components/perro/perro.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
+import { PlacesComponent } from './components/places/places.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { BuscadorComponent } from './components/buscador/buscador.component';
     VideosComponent,
     PerroComponent,
     BuscadorComponent,
+    PlacesComponent,
     
   ],
   imports: [

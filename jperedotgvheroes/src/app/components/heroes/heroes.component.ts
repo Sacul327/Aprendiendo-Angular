@@ -28,7 +28,18 @@ export class HeroesComponent implements OnInit {
     this.ruta.navigate( ['/heroe', index]);
   }
 
-  
+  buscarHeroes( termino:string):Heroe[]{
+    // Creo una variable de arreglo de heroe
+    let heroeArr: Heroe[] = [];
+    termino = termino.toLowerCase();
+    for ( let heroe of this.heroes ){
+      let nombre = heroe.nombre.toLowerCase();
+      if ( nombre.indexOf( termino ) >= 0 ){
+          console.log(heroeArr.push(heroe));
+      }
+    }
+    return heroeArr;
+  }
 
 }
 
