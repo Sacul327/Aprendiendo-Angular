@@ -12,6 +12,7 @@ import { PerroComponent } from './components/perro/perro.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
 import { PlacesComponent } from './components/places/places.component';
 import { AboutComponent } from './components/about/about.component';
+import { NgxPaginationModule } from "ngx-pagination";
 
 @NgModule({
   declarations: [
@@ -25,11 +26,11 @@ import { AboutComponent } from './components/about/about.component';
     BuscadorComponent,
     PlacesComponent,
     AboutComponent,
-    
   ],
   imports: [
     BrowserModule,
-    APP_ROUTING
+    APP_ROUTING,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

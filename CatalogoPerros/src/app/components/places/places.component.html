@@ -1,39 +1,123 @@
 <div class="jumbotron jumbotron-fluid vak">
     <div class="container">
-        <h1>Lugares para viajar con perro</h1>
+        <h1>Lugares para visitar en la ciudad con tu perro.</h1>
     </div>
-    <div class="building-block">
-        <div class="building-block-aspect">
-            <div class="building-block-padding">
-                <div class="building-block-wrapper">
-                    <div class="image-wrapper">
-                        <div class="aspect">
-                            <a href="https://www.starwars.com/films/solo"> <img src=c lass="thumb reserved-ratio" alt="Solo: A Star Wars Story"> </a>
-                        </div>
-                    </div>
-                    <div class="content-wrapper   ">
-                        <div class="bedazzlement"></div>
-                        <div class="content-bumper">
-                            <div class="content-info">
-                                <h3 class="title">
-                                    <a href="https://www.starwars.com/films/solo"> <span class="long-title"></span> </a>
-                                </h3>
-                                <div class="desc-sizer">
-                                    <a href="https://www.starwars.com/films/solo">
-                                        <p class="desc"></p>
-                                    </a>
+    <div class="blocks-bound" *ngFor="let iterador of barrio | paginate: {itemsPerPage:2, currentPage:p}">
+        <div class="blocks-container ref-1-1">
+            <ul class="blocks-list-view active el3_1A">
+                <div class="building-block-config el3_1A films-content    full image-left content-height-fixed ratio-2x1 short  mob-width-full mob-image-top           ">
+                    <div class="building-block     ">
+                        <div class="building-block-aspect">
+                            <div class="building-block-padding">
+                                <div class="building-block-wrapper">
+                                    <div class="image-wrapper">
+                                        <div class="aspect">
+                                            <a> <img [src]="iterador.imageUrl" class="thumb reserved-ratio"> </a>
+                                        </div>
+                                    </div>
+                                    <div class="content-wrapper   ">
+                                        <div class="bedazzlement"></div>
+                                        <div class="content-bumper">
+                                            <div class="content-info">
+                                                <h3 class="title">
+                                                    <a> <span class="long-title">{{iterador.nombreBarrio}}</span> </a>
+                                                </h3>
+                                                <div class="desc-sizer">
+                                                    <a>
+                                                        <p class="desc">{{iterador.description}}</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="metadata    mob-name mob-photo mob-date tab-name tab-photo tab-date desktop-name desktop-photo desktop-date   ">
-                            <div class="anchored-text">
-                                <h4 class="category-info"> <span class="content-icon films-icon"></span> <span class="category-name"></span> </h4>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <pagination-controls (pageChange)="p=$event"></pagination-controls>
+</div>
+
+
+<!-- <div class="blocks-bound" *ngFor="let iterador of barrio let i = index">
+    <div class="blocks-container ref-1-1">
+        <ul class="blocks-list-view active el3_1A">
+            <div class="building-block-config el3_1A films-content    full image-left content-height-fixed ratio-2x1 short  mob-width-full mob-image-top           ">
+                <div class="building-block     ">
+                    <div class="building-block-aspect">
+                        <div class="building-block-padding">
+                            <div class="building-block-wrapper">
+                                <div class="image-wrapper">
+                                    <div class="aspect">
+                                        <a href="https://www.starwars.com/films/solo"> <img [src]="iterador.imageUrl" class="thumb reserved-ratio" alt="Solo: A Star Wars Story"> </a>
+                                    </div>
+                                </div>
+                                <div class="content-wrapper   ">
+                                    <div class="bedazzlement"></div>
+                                    <div class="content-bumper">
+                                        <div class="content-info">
+                                            <h3 class="title">
+                                                <a href="https://www.starwars.com/films/solo"> <span class="long-title">Solo: A Star Wars Story</span> </a>
+                                            </h3>
+                                            <div class="desc-sizer">
+                                                <a href="https://www.starwars.com/films/solo">
+                                                    <p class="desc">Board the Millennium Falcon and journey to a galaxy far, far away in Solo: A Star Wars Story, an all-new adventure with the most beloved scoundrel in the galaxy. Through a series of daring escapades
+                                                        deep within a dark and dangerous criminal underworld, Han Solo meets his mighty future copilot Chewbacca and encounters the notorious gambler Lando Calrissian, in a journey that will set the course
+                                                        of one of the Star Wars saga’s most unlikely heroes. Solo: A Star Wars Story releases in U.S. Theaters on May 25, 2018.</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="metadata    mob-name mob-photo mob-date tab-name tab-photo tab-date desktop-name desktop-photo desktop-date   ">
+                                        <div class="anchored-text">
+                                            <h4 class="category-info"> <span class="content-icon films-icon"></span> <span class="category-name">films</span> </h4>
+                                        </div>
+                                    </div>
+                                    <div class="decal"></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="decal"></div>
                     </div>
+                </div>
+            </div>
+        </ul>
+    </div>
+</div> -->
+
+<!-- <div class="building-block" *ngFor="let iterador of barrio let i = index">
+    <div class="building-block-aspect">
+        <div class="building-block-padding">
+            <div class="building-block-wrapper">
+                <div class="image-wrapper">
+                    <div class="aspect">
+                        <a> <img [src]="iterador.imageUrl" ass="thumb reserved-ratio" alt="Solo: A Star Wars Story"> </a>
+                    </div>
+                </div>
+                <div class="content-wrapper   ">
+                    <div class="bedazzlement"></div>
+                    <div class="content-bumper">
+                        <div class="content-info">
+                            <h3 class="title">
+                                <a href="https://www.starwars.com/films/solo"> <span class="long-title"></span>asdasdasd </a>
+                            </h3>
+                            <div class="desc-sizer">
+                                <a href="https://www.starwars.com/films/solo">
+                                    <p class="desc">asdasdasd</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="metadata    mob-name mob-photo mob-date tab-name tab-photo tab-date desktop-name desktop-photo desktop-date   ">
+                        <div class="anchored-text">
+                            <h4 class="category-info"> <span class="content-icon films-icon"></span> <span class="category-name"></span> </h4>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
-</div>
+</div> -->
