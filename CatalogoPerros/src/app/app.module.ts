@@ -11,6 +11,7 @@ import { VideosComponent } from './components/videos/videos.component';
 import { PerroComponent } from './components/perro/perro.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
 import { PlacesComponent } from './components/places/places.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { PlacesComponent } from './components/places/places.component';
     PerroComponent,
     BuscadorComponent,
     PlacesComponent,
+    AboutComponent,
     
   ],
   imports: [

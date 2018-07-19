@@ -7,6 +7,7 @@ import { VideosComponent } from './components/videos/videos.component';
 import { PerroComponent } from './components/perro/perro.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
 import { PlacesComponent } from './components/places/places.component';
+import { AboutComponent } from './components/about/about.component';
 
 const APP_ROUTES: Routes = [
   { path: 'body', component: BodyComponent },
@@ -15,6 +16,7 @@ const APP_ROUTES: Routes = [
   { path: 'perro/:id', component: PerroComponent },
   { path: 'buscar/:termino', component: BuscadorComponent },
   { path: 'places', component: PlacesComponent},
+  { path: 'about', component: AboutComponent},
   { path: '**', pathMatch: 'full', redirectTo: 'body' },
 ];
 
