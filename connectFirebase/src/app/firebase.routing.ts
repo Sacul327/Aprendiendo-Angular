@@ -8,7 +8,7 @@ const APP_ROUTES: Routes = [
   { path: 'perros', component: PerrosFirebaseComponent},
   { path: 'perros2:/id', component: PerrosFirebase2Component},
   { path: 'perros2', component: PerrosFirebase2Component},
-  { path: '**', pathMatch: 'full', redirectTo: 'body' }
+  { path: '**', pathMatch: 'full', redirectTo: 'perros' }
 ];
 
 @NgModule({
