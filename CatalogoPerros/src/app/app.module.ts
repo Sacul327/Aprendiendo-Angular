@@ -13,6 +13,7 @@ import { BuscadorComponent } from './components/buscador/buscador.component';
 import { PlacesComponent } from './components/places/places.component';
 import { AboutComponent } from './components/about/about.component';
 import { NgxPaginationModule } from "ngx-pagination";
+import { RazasService } from './service/razas.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,9 @@ import { NgxPaginationModule } from "ngx-pagination";
     APP_ROUTING,
     NgxPaginationModule
   ],
-  providers: [],
+  providers: [
+    RazasService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
